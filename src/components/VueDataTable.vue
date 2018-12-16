@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <table>
+        <table class="table table-bordered">
             <thead>
             <tr>
                 <th scope="col">ID</th>
@@ -22,7 +22,6 @@
                 </tr>
             </template>
         </table>
-
     </div>
 </template>
 
@@ -35,7 +34,7 @@
             onInput (evt) {
                 const index = evt.target.getAttribute('index');
                 const value = evt.target.value;
-                this.$store.commit('updateRow', {value, index});
+                this.$store.dispatch('updateRow', {value, index});
             }
         }
     }

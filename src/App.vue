@@ -1,5 +1,6 @@
 <template>
-    <div id="app">
+    <div id="app" v-bind:class="{ loading: this.$store.state.loading }">
+        <div class="loader"></div>
         <VueDataTable />
     </div>
 </template>

@@ -5,19 +5,21 @@ Vue.use(Vuex);
 
 const index = new Vuex.Store({
     state: {
+        loading: true,
         products: []
     },
     mutations: {
         getProducts: (state) => {
             firebase.database().ref('/products/').orderByChild('id').once('value').then((snapshot) => {
                 state.products = snapshot.val();
+                state.loading = false;
             });
-        },
-        updateRow: (state, arg) => {
+        }
+    },
+    actions: {
+        updateRow: (store, arg) => {
             const {index, value} = arg;
-            state.products[index].description = value;
             firebase.database().ref("/products/"+index+"/Description").set(value);
-
         }
     }
 });

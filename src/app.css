@@ -1,0 +1,34 @@
+#app.loading .container {
+    display: none;
+}
+
+#app .container {
+    animation: fadeIn 1s ease;
+}
+
+#app.loading .loader {
+    display: block;
+}
+
+.loader {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: translateX(-50%) translateY(-50%) rotate(0deg); }
+    100% { transform: translateX(-50%) translateY(-50%) rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
