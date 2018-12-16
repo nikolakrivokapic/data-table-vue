@@ -1,6 +1,7 @@
 'use strict';
 const path = require("path");
 const { VueLoaderPlugin } = require('vue-loader');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     mode: 'development',
@@ -9,8 +10,7 @@ module.exports = {
     ],
     output: {
         path: path.join(__dirname, "dist"),
-        filename: "main.js",
-        publicPath: '../dist/'
+        filename: "main.js"
     },
     module: {
         rules: [
@@ -25,6 +25,9 @@ module.exports = {
         ]
     },
     plugins: [
+        new HtmlWebpackPlugin({
+            template: "index.html"
+        }),
         new VueLoaderPlugin()
     ]
 }
