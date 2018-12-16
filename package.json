@@ -6,8 +6,8 @@
   "scripts": {
     "test": "jest",
     "test-watch": "npm run test -- --watch",
-    "start": "webpack-dev-server --config build/webpack.config.dev.js --mode development --open --hot",
-    "build": "webpack -p --config build/webpack.config.dev.js"
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack -p"
   },
   "jest": {
     "moduleFileExtensions": [
