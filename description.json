@@ -1,0 +1,23 @@
+{
+  "basics": {
+    "name": "Nikola Krivokapic",
+    "occupation": "Software Developer",
+    "email": "nikolakrivokapic84@gmail.com",
+    "website": "https://nikolakrivokapic.github.io/portfolio/",
+    "summary": "Hello, my name is Nikola Krivokapic and I am Montenegro based software developer, mainly focused on full stack web development. I am working for clients from all around the world on contracting basis on behalf of my legal entity 'Bokasoft'. I am doing so mostly remotely, and I was part of great agile teams in the past, involved in many interesting projects. Last few years I am mostly working inside ed-tech field building apps for various academic institutions like University of South West Australia, University of Sydney, University of Arizona and many others.",
+    "location": {
+      "city": "Herceg Novi",
+      "country": "Montenegro"
+    },
+    "profiles": [
+      {
+        "network": "Linkedin",
+        "url": "https://www.linkedin.com/in/nikolakrivokapic84/"
+      },
+      {
+        "network": "Github",
+        "url": "https://github.com/nikolakrivokapic"
+      }
+    ]
+  }
+}
